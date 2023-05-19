@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1a1e22;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 42px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 533px;
+    height: 311px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.logo {
+    filter: invert(29%) sepia(97%) saturate(3293%) hue-rotate(203deg) brightness(97%) contrast(101%);
+    width: 10%;
+}
+
+.main h1 {
+    color: white;
+}
+
+.main input {
+    background-color: #26303c;
+    border: none;
+    outline: none;
+    color: #79b8ff;
+    padding: 16px;
+    width: 70%;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.user-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.photo img {
+    border-radius: 50%;
+    border: 8px solid #4792e8;
+    height: 150px;
+}
+
+.profile-name {
+    color: white;
+    font-size: 40px;
+}
+
+.user-name {
+    color: #0070f3;
+    font-size: 24px;
+}
+
+.joining {
+    color: #c8e1ff;
+    font-size: 16px;
+    display: flex;
+    gap: 8px;
+}
+
+.detail {
+    display: flex;
+    gap: 8px;
+}
+
+.small-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 150px;
+    height: 87px;
+    border-radius: 6px;
+    background-color: #24292e;
+    color: white;
+    font-size: 24px;
+}
+
+
+.small-card .grey {
+    font-size: 12px;
+    color: #c8e1ff;
+}
+
+.reposInfo {
+    display: none;
+}
+
+.repo-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.repo-header h2 {
+    font-size: 28px;
+    color: white;
+    border-bottom: 2px dotted #8cc0ff;
+}
+
+.repo-header span {
+    font-size: 16px;
+}
+
+span {
+    color: #5b6674;
+}
+
+#filter {
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 6px;
+    color: #0070f3;
+    background: #f6f8fa;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.reposInfo.active {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    gap: 32px;
+}
+
+.repo-main {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.repo-card {
+    display: flex;
+    flex-direction: column;
+    width: 338px;
+    height: 136px;
+    gap: 20px;
+    padding: 32px;
+    background-color: #e5ebf6;
+    border-radius: 4px;
+    transition: all 0.2s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.repo-card:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+.card-head {
+    display: flex;
+    gap: 8px;
+}
+
+.card-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    gap: 10px;
+}
+
+.col {
+    fill: #5b6674;
+}
+
+
+
+@media screen and (max-width: 479px) {
+    .main h1 {
+        text-align: center;
+    }
+
+    .container {
+        height: 60vh;
+    }
+
+    .small-card {
+        width: 120px;
+        height: 60px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width:991px) {
+
+    .container {
+        height: 60vh;
+    }
+
+    .reposInfo.active {
+        margin-left: 5%;
+    }
+}
