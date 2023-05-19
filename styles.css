@@ -202,7 +202,7 @@ a {
     }
 
     .container {
-        height: 60vh;
+        gap: 10px;
     }
 
     .small-card {
@@ -214,14 +214,14 @@ a {
 
 @media screen and (max-width: 767px) {
     .container {
-        height: 60vh;
+        gap: 10px;
     }
 }
 
 @media screen and (max-width:991px) {
 
     .container {
-        height: 60vh;
+        gap: 10px;
     }
 
     .reposInfo.active {
